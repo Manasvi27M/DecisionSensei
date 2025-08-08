@@ -16,8 +16,7 @@ export const sendMessageToAI = async (message: string): Promise<string> => {
     const response = await fetch(AI_ENDPOINT, {
       method: "POST",
       headers: {
-        Authorization: `Bearer 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`,
-        "Content-Type": "application/json",
+        Authorization: 'apikey', "Content-Type": "application/json",
         Accept: "application/json",
       },
       body: JSON.stringify({
